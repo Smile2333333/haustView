@@ -98,22 +98,20 @@ $(function() {
 			$(".campusIndex"+$index).siblings().addClass("invisable")
 			$(".campusIndex"+$index).removeClass("invisable")
 		})
-
+		$flag = false//判断广告是否被点击关闭
 		$(window).scroll(function(){
 			$offset = $("html,body").scrollTop()
-			if($offset >1000 && $offset<2400){
+			if($offset >1000 && $flag == false){
 				$(".gq_left").show(500)
 				$(".gq_right").show(500)				
 			}
-			else if($offset> 2400){
-				$(".gq_left").hide(200)
-				$(".gq_right").hide(200)
-			}
-			else{	
-				$(".gq_left").hide(200)
-				$(".gq_right").hide(200)
-			}
 		}) 
+
+		$(".power").click(function(){
+			$flag = true//被点击关闭后不再弹出该广告
+			$(".gq_left").hide(200)
+			$(".gq_right").hide(200)
+		})
 });
 
   

@@ -2003,40 +2003,58 @@ ul li {
 }
 .gq_left  {
   z-index: 9999;
-  width: 200px;
-  height: 348px;
+  width: 15%;
   border: 3px solid #ecf6ff;
   position: fixed;
   left: 12px;
   top: 250px;
   display: none;
-  border-radius: 10px 50px 50px 50px;
+  border-radius: 10px;
 }
 .gq_right {
   z-index: 9999;
-  width: 200px;
-  height: 348px;
+  width: 15%;
   border: 2px solid #ecf6ff;
   position: fixed;
   right: 12px;
   top: 250px;
   display: none;
-  border-radius: 50px 10px 50px 50px;
+  border-radius: 10px;
 }
 .gq_left  > a{
   text-align: center;
-  width: 200px;
+  width: 100%;
   position: absolute;
   right: 0;
   bottom: 0;
   background-color: #cae3fc;
+  color: #003e7e;
+  border-radius: 10px 10px 0 0;
 }
 .gq_right  > a{
   text-align: center;
-  width: 200px;
+  width: 100%;
   position: absolute;
   left: 0;
   bottom: 0;
   background-color: #cae3fc;
+  color: #003e7e;
+  border-radius: 10px 10px 0px 0px;
+}
+.power {
+  width: 10%;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  background-color: white;
+  border-radius: 50%;
+}
+.power {
+  width: 10%;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  background-color: white;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=style.css.map */
