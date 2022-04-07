@@ -2057,4 +2057,8 @@ ul li {
   background-color: white;
   border-radius: 50%;
 }
+@media screen and (max-width: 768px) {
+  .gq {
+ display:none; }
+ }
 /*# sourceMappingURL=style.css.map */
