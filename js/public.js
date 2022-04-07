@@ -98,20 +98,7 @@ $(function() {
 			$(".campusIndex"+$index).siblings().addClass("invisable")
 			$(".campusIndex"+$index).removeClass("invisable")
 		})
-		$flag = false//判断广告是否被点击关闭
-		$(window).scroll(function(){
-			$offset = $("html,body").scrollTop()
-			if($offset >1000 && $flag == false){
-				$(".gq_left").show(500)
-				$(".gq_right").show(500)				
-			}
-		}) 
-
-		$(".power").click(function(){
-			$flag = true//被点击关闭后不再弹出该广告
-			$(".gq_left").hide(200)
-			$(".gq_right").hide(200)
-		})
+		/* campous view top_qie end */
 });
 
   
